@@ -1,0 +1,129 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
+}
+
+a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header .logo {
+    width: 120px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Seções */
+section {
+    padding: 30px 0;
+}
+
+section h1, section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #222;
+    font-size: 1.6rem;
+}
+
+/* Texto das seções */
+section p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+/* Listas */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Lista de integrantes */
+.lista-integrantes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.lista-integrantes li {
+    text-align: center;
+    width: 150px;
+}
+
+.lista-integrantes img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ff6600;
+    margin: 0 5px;
+    font-size: 0.9rem;
+}
+
+/* Mobile responsivo */
+@media (max-width: 768px) {
+    .lista-integrantes {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .lista-integrantes li {
+        width: 80%;
+    }
+}
